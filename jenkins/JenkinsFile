@@ -15,8 +15,9 @@ pipeline{
 
         stage('Navegando Dir'){
             steps{
-                Dir("src")
-                bat 'dir'
+                dir("src"){
+                    bat 'dir'
+                }
         }
     }
 }
