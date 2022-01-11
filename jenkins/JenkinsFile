@@ -15,7 +15,7 @@ pipeline{
 
         stage('Navegando Dir'){
             steps{
-                dir("src"){
+                dir("src/br/com/programa"){
                     bat 'dir'
                 }
         }
