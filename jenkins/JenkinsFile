@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages{
+        stage('Inicio'){
+            steps{
+                bat 'echo Deu certo!'
+            }
+        }
+
+        stage('Maven'){
+            steps{
+                bat 'mvn -version'
+            }
+        }
+
+        stage('Navegando Dir'){
+            steps{
+                dir("src"){
+                    bat 'dir'
+                }
+        }
+    }
+}
+}
