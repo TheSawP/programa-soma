@@ -12,5 +12,11 @@ pipeline{
                 bat 'mvn -version'
             }
         }
+
+        stage('Navegando Dir'){
+            steps{
+                bat 'cd src'
+            }
+        }
     }
 }
