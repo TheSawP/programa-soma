@@ -16,18 +16,24 @@ pipeline{
         stage('Navegando Dir'){
             steps{
                 dir("src/br/com/programa"){
+<<<<<<< HEAD
                     stage('TESTE'){
                         steps{
                             bat 'java Programa.java'
                         }
                     }
                     
+=======
+                    bat 'dir'
+>>>>>>> parent of 24e8c13 (Add execucao prog pipeline)
                 }
-
-                
              }
-
          }
-         
+
+         stage('Executando programa'){
+             steps{
+                 bat 'java Programa.java'
+             }
+         }
     }
 }
