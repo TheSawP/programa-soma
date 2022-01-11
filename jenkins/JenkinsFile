@@ -16,7 +16,12 @@ pipeline{
         stage('Navegando Dir'){
             steps{
                 dir("src/br/com/programa"){
-                    bat 'java Programa.java'
+                    stage('TESTE'){
+                        steps{
+                            bat 'java Programa.java'
+                        }
+                    }
+                    
                 }
 
                 
