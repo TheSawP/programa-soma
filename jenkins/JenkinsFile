@@ -6,5 +6,11 @@ pipeline{
                 bat 'echo Deu certo!'
             }
         }
+
+        stage('Maven'){
+            steps{
+                bat 'mvn -version'
+            }
+        }
     }
 }
