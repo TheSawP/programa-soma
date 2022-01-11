@@ -16,6 +16,9 @@ pipeline{
         stage('Navegando Dir'){
             steps{
                 bat 'cd src'
+                bat 'cd br'
+                bat 'cd com'
+                bat 'cd programa'
             }
         }
     }
