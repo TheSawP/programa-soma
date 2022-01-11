@@ -18,7 +18,13 @@ pipeline{
                 dir("src"){
                     bat 'dir'
                 }
-        }
+             }
+         }
+
+         stage('Executando programa'){
+             steps{
+                 bat 'java Programa.java'
+             }
+         }
     }
-}
 }
