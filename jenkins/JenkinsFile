@@ -13,7 +13,7 @@ pipeline{
             }
         }
 
-        stage('Navegando Dir'){
+        stage('Executando Programa'){
             steps{
                 dir("src/br/com/programa"){
 
@@ -23,9 +23,9 @@ pipeline{
              }
          }
 
-         stage('Executando programa'){
+         stage('Fim'){
              steps{
-                 bat 'java Programa.java'
+                 bat 'echo chegamos ao final'
              }
          }
     }
